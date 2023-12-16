@@ -2,6 +2,7 @@
   "name": "static-project-x-frontend",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://faisalqashmrfs.github.io/static-project-x-frontend/",
   "type": "module",
   "scripts": {
     "dev": "vite",
