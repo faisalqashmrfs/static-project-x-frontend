@@ -11,7 +11,7 @@ import {  useEffect, useState } from "react";
 
 export default function Sidbar() {
 
-    const emailStorage = localStorage.getItem('bearer');
+    const emailStorage = 'admin@gmail.com';
     const [isOpen,setIsOpen] = useState(false);
     const [windowSize, setWindowSize] = useState({
         width: undefined

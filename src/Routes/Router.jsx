@@ -1,7 +1,6 @@
 import App from "../App"
 import Dashboard from "../Modules/Dashboard/Pages/Dashboard"
 import Home from "../Modules/Dashboard/Pages/Home"
-import GuardedRoutes from "./GuardedRoutes"
 import Profile from "../Modules/Profile/Pages/Profile";
 import WorkLog from "../Modules/WorkLog/Pages/WorkLog";
 import UpdateProject from "../Modules/Admin/AdminProjects/Pages/UpdateProject";
@@ -21,12 +20,10 @@ import UserProjects from "../Modules/User/Projects/Pages/UserProjects";
 import ProjectDetails from "../Modules/User/Projects/Pages/ProjectDetails";
 import AdminProjects from "../Modules/Admin/AdminProjects/Pages/AdminProjects.jsx";
 import PerformancePage from "../Modules/Performance/Pages/PerformancePage.jsx";
-import Login from "../Modules/Login/Pages/Login.jsx";
 import AdminProjectDetails from "../Modules/Admin/AdminProjects/Pages/AdminProjectDetails.jsx";
 import UpdateTask from "../Modules/Admin/Tasks/Pages/UpdateTask.jsx";
 
 
-const isAuthenticated = localStorage.getItem('bearer');
 
 export const routes = [
     
@@ -36,10 +33,7 @@ export const routes = [
     },
     {
         path: '/dashboard',
-        element: <GuardedRoutes
-                isAccessable={isAuthenticated}
-                OnSucess={() => <Dashboard />}
-                OnFaild={() => <Login />}/>
+        element: <Dashboard />
         ,
         children: [
             {
