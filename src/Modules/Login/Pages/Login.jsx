@@ -5,6 +5,7 @@ import loginImg from '../../../assets/login.png'
 import './login.css'
 import { useState } from "react";
 import Loading from "../../../Routes/Loading";
+import { Link } from "react-router-dom";
 
 
 export default function Login() {
@@ -34,14 +35,17 @@ export default function Login() {
 
     return(
            <div>
+           
             <div className="container d-flex justify-content-between align-items-center mr-login-header">
                 <div>
                     <Logo/>
                 </div>
-                <div>
+                <div className="FQ-danger-flex">
+                <Link className="FQ-danger" to='/dashboard/'>Go</Link>
                     <Frame/>
                     Asite Product System
                 </div>
+                
             </div>
             {loading && <Loading/>}
             <div className="container d-flex justify-content-center align-items-center mr-content">

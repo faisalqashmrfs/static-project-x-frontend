@@ -47,7 +47,27 @@
 .mr-login-btn button:hover{
     background: #ff8500d6;
 }
+.FQ-danger-flex
+{
+    display: flex;
+    align-items: center;
 
+}
+
+.FQ-danger
+{
+    width: 100px;
+    height: 50px;
+    padding: 10px 10px;
+    background-color: orange;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+    margin-right: 10px;
+}
 
 @keyframes up-down {
     0% {
